@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahrukh Bashir | Software Engineer &amp; AI Enthusiast</title>
+<meta name="description" content="Mahrukh Bashir is a Computer Science graduate building AI-powered software for real-world problems. Creator of Rozgar Hub, an AI employment platform for workers and employers in Pakistan.">
+<meta name="theme-color" content="#F8F7F4">
+<meta property="og:title" content="Mahrukh Bashir | Software Engineer &amp; AI Enthusiast">
+<meta property="og:description" content="Building technology that solves real-world problems. Computer Science graduate, creator of Rozgar Hub.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234B3FC4'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='white' font-family='Georgia,serif'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+
+<!--
+  ============================================================
+  BEFORE YOU PUBLISH — 3 THINGS TO EDIT
+  1. Scroll to the bottom of this file: set your email, LinkedIn and GitHub in PROFILE.
+  2. Add your portrait at  assets/mahrukh.jpg  (the page shows "MB" until you do).
+  3. Search for "EDIT:" in this file to find text you should confirm or replace.
+  ============================================================
+-->
+
+<style>
+:root{
+  --paper:#F8F7F4;
+  --ink:#171717;
+  --muted:#626262;
+  --line:#E3E0D8;
+  --card:#FFFFFF;
+  --accent:#4B3FC4;
+  --accent-deep:#241C63;
+  --accent-soft:#ECEAFB;
+  --night:#1B1646;
+  --on-night:#B9B2FF;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --urdu:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq","Noto Naskh Arabic",serif;
+  --gutter:clamp(20px,4vw,48px);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.7;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4,p,ol,ul,dl,dd,figure{margin:0;padding:0}
+ul,ol{list-style:none}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+::selection{background:var(--accent);color:#fff}
+
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 var(--gutter)}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+
+/* ---------- Type ---------- */
+.display{font-family:var(--serif);font-weight:400;font-size:clamp(2.1rem,4.6vw,3.6rem);line-height:1.08;letter-spacing:-0.02em;font-variation-settings:"opsz" 72;max-width:18ch}
+.lede{font-family:var(--serif);font-weight:300;font-size:clamp(1.3rem,2.2vw,1.65rem);line-height:1.5;color:var(--ink);max-width:36em}
+.prose p{max-width:62ch;color:#2b2b2b}
+.prose p + p{margin-top:1.1em}
+.muted{color:var(--muted)}
+
+/* ---------- Buttons & pills ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 28px;border-radius:999px;font-weight:600;font-size:.98rem;border:1.5px solid transparent;transition:background .2s,color .2s,border-color .2s,transform .2s}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-deep)}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-block;padding:5px 14px;border:1px solid var(--line);background:var(--card);border-radius:999px;font-size:.88rem;line-height:1.5;color:#2b2b2b}
+.pill-accent{background:var(--accent-soft);border-color:transparent;color:var(--accent-deep)}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(248,247,244,.9);border-bottom:1px solid transparent;transition:border-color .2s}
+@supports (backdrop-filter:blur(8px)){.site-header{background:rgba(248,247,244,.78);backdrop-filter:saturate(1.4) blur(12px)}}
+.site-header.is-scrolled{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-0.01em}
+.brand-mark{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--accent);color:#fff;font-family:var(--serif);font-size:1.1rem;line-height:1}
+.nav-links{display:flex;gap:26px}
+.nav-link{font-size:.92rem;color:var(--muted);padding:6px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.nav-link:hover{color:var(--ink)}
+.nav-link[aria-current="true"]{color:var(--ink);border-color:var(--accent)}
+.nav-toggle{display:none;background:none;border:1.5px solid var(--line);border-radius:999px;padding:8px 16px;font-size:.9rem;font-weight:600}
+
+/* ---------- Hero ---------- */
+.hero{padding:clamp(36px,6vw,80px) 0 0}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,5vw,72px);align-items:center}
+.hero-name{font-family:var(--serif);font-weight:300;font-size:clamp(3.4rem,9.5vw,7.6rem);line-height:.92;letter-spacing:-0.035em;font-variation-settings:"opsz" 72}
+.hero-name span{display:block}
+.hero-role{margin-top:clamp(20px,3vw,32px);font-size:clamp(1.1rem,1.8vw,1.3rem);font-weight:500}
+.hero-line{margin-top:8px;font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.25;color:var(--accent-deep);max-width:20em}
+.hero-desc{margin-top:22px;color:var(--muted);max-width:52ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+
+.hero-visual{position:relative;width:100%;max-width:440px;aspect-ratio:440/540;justify-self:end}
+.constellation{position:absolute;inset:0;width:100%;height:100%;color:var(--accent);overflow:visible}
+.c-lines path{stroke-opacity:.38;stroke-dasharray:1;stroke-dashoffset:0}
+.c-nodes circle{fill:currentColor}
+.c-nodes .hollow{fill:var(--paper);stroke:currentColor;stroke-width:1.5}
+.portrait{position:absolute;left:16%;right:16%;top:13%;bottom:13%;border-radius:999px 999px 26px 26px;overflow:hidden;background:linear-gradient(160deg,var(--accent-soft),#DAD6F7);border:1px solid rgba(75,63,196,.18)}
+.portrait-mark{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--serif);font-weight:300;font-size:clamp(4rem,10vw,6.5rem);letter-spacing:-0.04em;color:var(--accent)}
+.portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+.hero-facts{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(44px,7vw,88px);border-top:1px solid var(--ink)}
+.fact{padding:20px 20px 0 0;display:flex;flex-direction:column;gap:2px}
+.fact + .fact{padding-left:20px;border-left:1px solid var(--line)}
+.fact dd{font-family:var(--serif);font-size:1.35rem;line-height:1.25}
+.fact dt{font-size:.85rem;color:var(--muted)}
+
+@media (prefers-reduced-motion:no-preference){
+  .rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0s)}
+  .c-lines path{stroke-dashoffset:1;animation:draw 1.5s cubic-bezier(.4,.1,.2,1) forwards;animation-delay:calc(.45s + var(--i) * .11s)}
+  .c-nodes circle{transform-box:fill-box;transform-origin:center;animation:pop .5s cubic-bezier(.2,.9,.3,1.4) both;animation-delay:calc(.35s + var(--i) * .11s)}
+  .portrait{animation:rise 1s cubic-bezier(.2,.7,.2,1) both;animation-delay:.25s}
+}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:scale(1)}}
+
+/* ---------- Chapters (section layout) ---------- */
+.section{padding:clamp(72px,10vw,136px) 0}
+.chapter{display:grid;grid-template-columns:190px minmax(0,1fr);gap:clamp(24px,5vw,72px)}
+.chapter-label{position:sticky;top:104px;align-self:start;color:var(--accent);font-weight:600;font-size:.95rem;line-height:1.3}
+.chapter-label::before{content:"";display:block;width:32px;height:2px;background:var(--accent);margin-bottom:14px}
+.chapter-body > .display + *{margin-top:clamp(24px,3vw,36px)}
+.divider{border:0;border-top:1px solid var(--line);margin:0}
+
+/* ---------- About ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(40px,6vw,64px);border-top:1px solid var(--ink)}
+.stat{padding:22px 16px 0 0;display:flex;flex-direction:column;gap:6px}
+.stat dd{order:-1}
+.stat + .stat{padding-left:20px;border-left:1px solid var(--line)}
+.stat dd{font-family:var(--serif);font-weight:300;font-size:clamp(2.4rem,4.4vw,3.4rem);line-height:1;letter-spacing:-0.02em}
+.stat dt{font-size:.9rem;color:var(--muted);line-height:1.4}
+
+/* ---------- Timeline ---------- */
+.timeline{position:relative;--fill:0px;margin-top:clamp(28px,4vw,44px)}
+.timeline::before,.timeline::after{content:"";position:absolute;left:123px;top:12px;width:2px;border-radius:2px}
+.timeline::before{height:var(--total,calc(100% - 24px));background:var(--line)}
+.timeline::after{height:var(--fill);max-height:var(--total,calc(100% - 24px));background:var(--accent)}
+.tl-item{position:relative;display:grid;grid-template-columns:110px 28px minmax(0,1fr);grid-template-areas:"year dot body";column-gap:0;padding-bottom:clamp(30px,4vw,44px)}
+.tl-item:last-child{padding-bottom:0}
+.tl-year{grid-area:year;font-family:var(--serif);font-size:1.25rem;line-height:1.5;color:var(--muted);padding-top:1px}
+.tl-dot{grid-area:dot;justify-self:center;margin-top:7px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:2px solid var(--line);position:relative;z-index:1;transition:background .3s,border-color .3s}
+.tl-item.is-reached .tl-dot{background:var(--accent);border-color:var(--accent)}
+.tl-item.is-reached .tl-year{color:var(--ink)}
+.tl-body{grid-area:body;padding-left:clamp(14px,3vw,32px)}
+.tl-body h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.3rem,2.2vw,1.65rem);line-height:1.25;letter-spacing:-0.01em}
+.tl-body p{margin-top:8px;color:var(--muted);max-width:56ch}
+.tl-next .tl-dot{border-style:dashed;border-color:var(--accent);width:18px;height:18px;margin-top:5px}
+.tl-next.is-reached .tl-dot{background:var(--accent);border-style:solid}
+.tl-next .tl-year{color:var(--accent);font-weight:500}
+.tl-next .tl-body{background:var(--accent-soft);border-radius:18px;padding:20px clamp(16px,3vw,28px);margin-left:clamp(14px,3vw,32px);padding-left:clamp(16px,3vw,28px)}
+.tl-next .tl-body h3{color:var(--accent-deep)}
+.tl-next .tl-body p{color:#3b3670}
+
+/* ---------- Rows (experience, education, other projects) ---------- */
+.rows{margin-top:clamp(28px,4vw,44px);border-bottom:1px solid var(--line)}
+.row{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);gap:16px clamp(24px,4vw,56px);padding:clamp(24px,3vw,34px) 0;border-top:1px solid var(--line)}
+.row .row-date{font-family:var(--serif);font-size:1.2rem;line-height:1.4;margin-top:0;color:var(--ink)}
+.row .row-org{color:var(--muted);font-size:.95rem;margin-top:2px}
+.row h3{font-family:var(--serif);font-weight:400;font-size:clamp(1.35rem,2.3vw,1.75rem);line-height:1.2;letter-spacing:-0.01em}
+.row p{margin-top:10px;color:#2b2b2b;max-width:60ch}
+.row .pills{margin-top:16px}
+.row-link{display:inline-block;margin-top:14px;font-weight:600;color:var(--accent);border-bottom:1.5px solid currentColor;padding-bottom:1px}
+.row-link:hover{color:var(--accent-deep)}
+.subhead{font-family:var(--serif);font-weight:400;font-size:clamp(1.5rem,2.6vw,2rem);letter-spacing:-0.01em;margin-top:clamp(56px,8vw,88px)}
+.subhead + .rows,.subhead + .papers{margin-top:20px}
+.award{margin-top:22px;display:flex;gap:14px;align-items:flex-start;padding:18px 20px;border-radius:16px;background:var(--accent-soft);max-width:60ch}
+.award-icon{flex:none;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center}
+.award strong{display:block;font-weight:600;color:var(--accent-deep)}
+.award div span{font-size:.95rem;color:#3b3670}
+
+/* ---------- Featured project ---------- */
+.feature{margin-top:clamp(28px,4vw,44px);background:var(--card);border:1px solid var(--line);border-radius:28px;padding:clamp(22px,4.5vw,60px);box-shadow:0 30px 60px -40px rgba(36,28,99,.35)}
+.feature-tag{display:inline-block;background:var(--accent);color:#fff;font-size:.82rem;font-weight:600;padding:5px 14px;border-radius:999px}
+.feature-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 22px;margin-top:20px}
+.feature-title{font-family:var(--serif);font-weight:300;font-size:clamp(3rem,8vw,6rem);line-height:.98;letter-spacing:-0.035em;font-variation-settings:"opsz" 72}
+.urdu{font-family:var(--urdu);font-size:clamp(1.6rem,3vw,2.3rem);line-height:2;color:var(--accent)}
+.feature-sub{margin-top:6px;font-size:1.1rem;font-weight:500}
+.feature-statement{margin-top:20px;font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.3;color:var(--accent-deep);max-width:22em}
+.feature-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(28px,5vw,64px);margin-top:clamp(28px,4vw,48px);align-items:start}
+.story-block + .story-block{margin-top:26px}
+.story-block h4{font-size:.95rem;font-weight:600;color:var(--accent);margin-bottom:6px}
+.story-block p{color:#2b2b2b;max-width:56ch}
+.shot{position:relative;display:block;width:100%;padding:0;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;max-height:640px;text-align:left;cursor:zoom-in;transition:border-color .2s,box-shadow .2s}
+.shot:hover{border-color:var(--accent);box-shadow:0 20px 40px -28px rgba(36,28,99,.5)}
+.shot img{width:100%;height:auto}
+.shot::after{content:"";position:absolute;left:0;right:0;bottom:0;height:150px;background:linear-gradient(to bottom,rgba(255,255,255,0),#fff 85%);pointer-events:none}
+.shot-hint{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:2;background:var(--accent);color:#fff;font-size:.88rem;font-weight:600;padding:8px 18px;border-radius:999px;white-space:nowrap}
+.shot-caption{margin-top:10px;font-size:.88rem;color:var(--muted)}
+
+.results{display:grid;grid-template-columns:repeat(3,1fr);margin-top:clamp(36px,5vw,56px);background:var(--accent-soft);border-radius:22px}
+.result{padding:clamp(20px,3vw,34px);display:flex;flex-direction:column;gap:6px}
+.result dd{order:-1}
+.result + .result{border-left:1px solid rgba(75,63,196,.18)}
+.result dd{font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,5.5vw,4.4rem);line-height:1;letter-spacing:-0.03em;color:var(--accent-deep)}
+.result dt{font-size:.95rem;color:#3b3670}
+
+.flow{margin-top:clamp(36px,5vw,56px)}
+.flow h4{font-family:var(--serif);font-weight:400;font-size:1.5rem;letter-spacing:-0.01em}
+.flow-list{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px;counter-reset:step}
+.flow-list li{counter-increment:step;position:relative;padding:16px 0 16px 40px;border-top:1px solid var(--line)}
+.flow-list li::before{content:counter(step);position:absolute;left:0;top:16px;width:26px;height:26px;border-radius:50%;background:var(--accent-soft);color:var(--accent-deep);font-size:.82rem;font-weight:600;display:grid;place-items:center}
+.flow-list strong{display:block;font-weight:600;line-height:1.35}
+.flow-list span{display:block;margin-top:2px;font-size:.92rem;color:var(--muted);line-height:1.5}
+.feature .pills{margin-top:clamp(28px,4vw,40px)}
+
+/* ---------- Research ---------- */
+.papers{margin-top:clamp(28px,4vw,44px);border-bottom:1px solid var(--line)}
+.paper{padding:clamp(22px,3vw,32px) 0;border-top:1px solid var(--line)}
+.paper h3{font-family:var(--serif);font-style:italic;font-weight:300;font-size:clamp(1.5rem,3vw,2.2rem);line-height:1.2;letter-spacing:-0.015em}
+.paper p{margin-top:6px;color:var(--muted)}
+.areas{display:grid;grid-template-columns:repeat(2,1fr);margin-top:20px;border-top:1px solid var(--ink)}
+.area{padding:24px 28px 28px 0;border-bottom:1px solid var(--line)}
+.area:nth-child(even){padding-left:28px;padding-right:0;border-left:1px solid var(--line)}
+.area h3{font-family:var(--serif);font-weight:400;font-size:1.4rem;line-height:1.25}
+.area p{margin-top:6px;color:var(--muted);max-width:40ch}
+
+/* ---------- Skills ---------- */
+.skill-group{display:grid;grid-template-columns:minmax(0,.55fr) minmax(0,1.45fr);gap:12px clamp(24px,4vw,56px);padding:22px 0;border-top:1px solid var(--line)}
+.skill-group h3{font-family:var(--serif);font-weight:400;font-size:1.25rem;line-height:1.4}
+.skills{margin-top:clamp(28px,4vw,44px);border-bottom:1px solid var(--line)}
+
+/* ---------- Vision ---------- */
+.vision{background:var(--night);color:#F4F2FF;padding:clamp(80px,11vw,152px) 0}
+.vision .chapter-label{color:var(--on-night)}
+.vision .chapter-label::before{background:var(--on-night)}
+.vision-statement{font-family:var(--serif);font-weight:300;font-size:clamp(2.6rem,7vw,5.6rem);line-height:1.02;letter-spacing:-0.03em;font-variation-settings:"opsz" 72;max-width:14em}
+.vision-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,80px);margin-top:clamp(40px,6vw,72px);align-items:center}
+.vision-copy p{max-width:52ch;color:#D8D4F5}
+.vision-copy p + p{margin-top:1.1em}
+.vision-copy p:last-child{color:#fff;font-weight:500}
+.vision-map{position:relative;width:100%;aspect-ratio:1/.95;min-height:300px}
+.vision-map svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.vision-map line{stroke:var(--on-night);stroke-opacity:.5;stroke-width:1;vector-effect:non-scaling-stroke}
+.vision-map .dashed{stroke-dasharray:4 5;stroke-opacity:.35}
+.vision-map .built-line{stroke-opacity:1;stroke-width:2}
+.vm-node{position:absolute;width:0;height:0}
+.vm-dot{position:absolute;left:-10px;top:-10px;width:20px;height:20px;border-radius:50%;border:2px solid var(--on-night);background:var(--night)}
+.vm-built .vm-dot{background:var(--on-night);box-shadow:0 0 0 7px rgba(185,178,255,.2)}
+.vm-center .vm-dot{left:-6px;top:-6px;width:12px;height:12px;background:#fff;border-color:#fff}
+.vm-label{position:absolute;left:0;transform:translateX(-50%);white-space:nowrap;text-align:center;font-weight:600;font-size:1.02rem;line-height:1.3}
+.vm-label small{display:block;font-weight:400;font-size:.82rem;color:var(--on-night)}
+.vm-below .vm-label{top:20px}
+.vm-above .vm-label{bottom:20px}
+.vm-top{left:50%;top:19%}
+.vm-left{left:15%;top:50%}
+.vm-right{left:85%;top:50%}
+.vm-bottom{left:50%;top:81%}
+.vm-center{left:50%;top:50%}
+
+/* ---------- Contact ---------- */
+.contact-list{margin-top:clamp(28px,4vw,44px);border-bottom:1px solid var(--line)}
+.contact-item{display:grid;grid-template-columns:minmax(0,.4fr) minmax(0,1.6fr);gap:8px 24px;align-items:baseline;padding:20px 0;border-top:1px solid var(--line);transition:padding .2s}
+.contact-item:hover{padding-left:8px}
+.contact-item span:first-child{color:var(--muted);font-size:.95rem}
+.contact-value{font-family:var(--serif);font-size:clamp(1.2rem,2.6vw,1.8rem);line-height:1.3;overflow-wrap:anywhere;transition:color .2s}
+.contact-item:hover .contact-value{color:var(--accent)}
+.contact-note{margin-top:24px;color:var(--muted)}
+
+/* ---------- Footer ---------- */
+.site-footer{padding:36px 0 44px;border-top:1px solid var(--line);font-size:.92rem;color:var(--muted)}
+.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px}
+.footer-inner strong{color:var(--ink);font-weight:600}
+
+/* ---------- Lightbox ---------- */
+.lightbox{border:0;padding:0;background:transparent;width:min(94vw,780px);max-width:none;max-height:94vh;overflow:visible}
+.lightbox::backdrop{background:rgba(20,16,50,.78)}
+.lb-inner{position:relative;max-height:94vh;overflow:auto;background:#fff;border-radius:18px}
+.lb-close{position:sticky;top:12px;float:right;margin:12px 12px -48px 0;z-index:2;width:40px;height:40px;border-radius:50%;border:0;background:var(--ink);color:#fff;font-size:1.3rem;line-height:1}
+.lb-inner img{width:100%;height:auto}
+
+/* ---------- Responsive ---------- */
+@media (max-width:1000px){
+  .nav-links{gap:18px}
+  .chapter{grid-template-columns:1fr;gap:20px}
+  .chapter-label{position:static}
+  .chapter-label::before{margin-bottom:10px}
+  .feature-grid,.vision-grid{grid-template-columns:1fr}
+  .flow-list{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:860px){
+  .nav-toggle{display:inline-block}
+  .nav-links{position:absolute;left:0;right:0;top:68px;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px var(--gutter) 16px;display:none}
+  .nav-links.open{display:flex}
+  .nav-link{padding:12px 0;font-size:1rem;border-bottom:1px solid var(--line)}
+  .nav-link[aria-current="true"]{border-color:var(--line);color:var(--accent);font-weight:600}
+  .hero-grid{grid-template-columns:1fr}
+  .hero-visual{justify-self:center;max-width:360px;order:-1}
+  .hero-facts,.stats{grid-template-columns:repeat(2,1fr)}
+  .fact:nth-child(3),.stat:nth-child(3){padding-left:0;border-left:0}
+  .fact:nth-child(n+3),.stat:nth-child(n+3){margin-top:20px;border-top:1px solid var(--line)}
+}
+@media (max-width:700px){
+  .timeline::before,.timeline::after{left:13px}
+  .tl-item{grid-template-columns:28px minmax(0,1fr);grid-template-areas:"dot year" "dot body"}
+  .tl-body{padding-left:8px}
+  .tl-year{padding-left:8px}
+  .tl-next .tl-body{margin-left:8px}
+  .row,.skill-group,.contact-item{grid-template-columns:1fr}
+  .results{grid-template-columns:1fr}
+  .result + .result{border-left:0;border-top:1px solid rgba(75,63,196,.18)}
+  .flow-list{grid-template-columns:1fr}
+  .areas{grid-template-columns:1fr}
+  .area:nth-child(even){padding-left:0;border-left:0}
+  .area{padding-right:0}
+  .feature{border-radius:22px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition-duration:.01ms !important}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#about">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="site-header">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="Mahrukh Bashir, home"><span class="brand-mark" aria-hidden="true">M</span>Mahrukh Bashir</a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#journey">Journey</a>
+      <a class="nav-link" href="#experience">Experience</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#research">Research</a>
+      <a class="nav-link" href="#skills">Skills</a>
+      <a class="nav-link" href="#vision">Vision</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1 class="hero-name">
+          <span class="rise" style="--d:.05s">Mahrukh</span>
+          <span class="rise" style="--d:.15s">Bashir</span>
+        </h1>
+        <p class="hero-role rise" style="--d:.3s">Software Engineer &amp; AI Enthusiast</p>
+        <p class="hero-line rise" style="--d:.4s">Building technology that solves real-world problems.</p>
+        <p class="hero-desc rise" style="--d:.5s">Computer Science graduate with a strong interest in Artificial Intelligence, Machine Learning, and software development. I enjoy turning ideas into practical solutions that can create meaningful opportunities for people.</p>
+        <div class="hero-actions rise" style="--d:.6s">
+          <a class="btn btn-primary" href="#journey">Explore my journey</a>
+          <a class="btn btn-ghost" href="#projects">View my projects</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <svg class="constellation" viewBox="0 0 440 540" aria-hidden="true" focusable="false">
+          <g class="c-lines" fill="none" stroke="currentColor" stroke-width="1.3">
+            <path pathLength="1" style="--i:0"  d="M30 120 L60 40"/>
+            <path pathLength="1" style="--i:1"  d="M60 40 L220 20"/>
+            <path pathLength="1" style="--i:2"  d="M220 20 L400 90"/>
+            <path pathLength="1" style="--i:3"  d="M400 90 L415 250"/>
+            <path pathLength="1" style="--i:4"  d="M415 250 L390 500"/>
+            <path pathLength="1" style="--i:5"  d="M390 500 L230 525"/>
+            <path pathLength="1" style="--i:6"  d="M230 525 L40 430"/>
+            <path pathLength="1" style="--i:7"  d="M40 430 L20 300"/>
+            <path pathLength="1" style="--i:8"  d="M20 300 L30 120"/>
+            <path pathLength="1" style="--i:9"  d="M220 20 L30 120"/>
+            <path pathLength="1" style="--i:10" d="M415 250 L230 525"/>
+            <path pathLength="1" style="--i:11" d="M60 40 L20 300"/>
+          </g>
+          <g class="c-nodes">
+            <circle style="--i:0" cx="30"  cy="120" r="5"/>
+            <circle style="--i:1" cx="60"  cy="40"  r="7" class="hollow"/>
+            <circle style="--i:2" cx="220" cy="20"  r="5"/>
+            <circle style="--i:3" cx="400" cy="90"  r="7" class="hollow"/>
+            <circle style="--i:4" cx="415" cy="250" r="5"/>
+            <circle style="--i:5" cx="390" cy="500" r="7" class="hollow"/>
+            <circle style="--i:6" cx="230" cy="525" r="5"/>
+            <circle style="--i:7" cx="40"  cy="430" r="7" class="hollow"/>
+            <circle style="--i:8" cx="20"  cy="300" r="5"/>
+          </g>
+        </svg>
+        <div class="portrait">
+          <span class="portrait-mark" aria-hidden="true">MB</span>
+          <!-- EDIT: add your photo at assets/mahrukh.jpg (portrait, clean background, natural expression) -->
+          <img src="assets/mahrukh.jpg" alt="Portrait of Mahrukh Bashir" onerror="this.remove()">
+        </div>
+      </div>
+    </div>
+
+    <dl class="hero-facts">
+      <div class="fact"><dt>Lahore Garrison University, 2026</dt><dd>BS Computer Science</dd></div>
+      <div class="fact"><dt>CGPA</dt><dd>3.87 out of 4.00</dd></div>
+      <div class="fact"><dt>Focus</dt><dd>AI and Machine Learning</dd></div>
+      <div class="fact"><dt>Next step</dt><dd>MSc Artificial Intelligence</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container chapter">
+    <div class="chapter-label">Who I am</div>
+    <div class="chapter-body">
+      <h2 class="display">From curiosity to building solutions</h2>
+      <div class="prose">
+        <p class="lede">I recently completed my Bachelor of Science in Computer Science at Lahore Garrison University with a CGPA of 3.87.</p>
+        <p>My interest in technology started with software development. During my degree, I became more and more interested in Artificial Intelligence and in using it to solve problems beyond the classroom.</p>
+        <p>I explored Machine Learning and Deep Learning academically, worked on research projects, and gained practical software development experience through internships and university projects.</p>
+        <p>One project represents this journey especially well: <strong>Rozgar Hub</strong>, an AI-powered employment platform designed to connect workers and employers in Pakistan. Building it showed me that AI can be more than a technical concept. It can become part of the solution to a real social and economic problem.</p>
+        <p>Today, I want to deepen my knowledge of Artificial Intelligence and learn how to build intelligent systems that are practical, responsible, and useful to the communities they serve.</p>
+      </div>
+      <dl class="stats">
+        <div class="stat"><dt>CGPA</dt><dd>3.87</dd></div>
+        <div class="stat"><dt>BS Computer Science graduate</dt><dd>2026</dd></div>
+        <div class="stat"><dt>Research projects</dt><dd>2</dd></div>
+        <div class="stat"><dt>AI-powered final year project</dt><dd>1</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ JOURNEY ============ -->
+<section class="section" id="journey">
+  <div class="container chapter">
+    <div class="chapter-label">How I got here</div>
+    <div class="chapter-body">
+      <h2 class="display">Learning, building, exploring AI, going further</h2>
+
+      <ol class="timeline" id="timeline">
+        <li class="tl-item">
+          <span class="tl-year">2022</span><span class="tl-dot"></span>
+          <div class="tl-body">
+            <h3>Started BS Computer Science</h3>
+            <p>Began my undergraduate journey at Lahore Garrison University and built a foundation in programming, databases, software engineering, and computer science.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">2024–2026</span><span class="tl-dot"></span>
+          <div class="tl-body">
+            <h3>Software and ERP experience</h3>
+            <p>Gained practical experience with ASP.NET, C#, SQL Server, and ERP-related applications while working on university systems.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">2025–2026</span><span class="tl-dot"></span>
+          <div class="tl-body">
+            <h3>Machine Learning and Deep Learning</h3>
+            <p>Studied Machine Learning and Deep Learning and explored research questions involving AI applications.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">2026</span><span class="tl-dot"></span>
+          <div class="tl-body">
+            <h3>Rozgar Hub</h3>
+            <p>Developed my Final Year Project, <em>Rozgar Hub: AI-Powered Employment Solutions</em>, to connect workers and employers through AI-assisted matching.</p>
+          </div>
+        </li>
+        <li class="tl-item">
+          <span class="tl-year">2026</span><span class="tl-dot"></span>
+          <div class="tl-body">
+            <h3>BS Computer Science graduate</h3>
+            <p>Completed my degree with a 3.87 CGPA.</p>
+          </div>
+        </li>
+        <li class="tl-item tl-next">
+          <span class="tl-year">Next</span><span class="tl-dot"></span>
+          <div class="tl-body">
+            <h3>MSc Artificial Intelligence</h3>
+            <p>I want to move from applying existing AI techniques to understanding intelligent systems more deeply, including machine learning and its real-world applications.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ EXPERIENCE + EDUCATION ============ -->
+<section class="section" id="experience">
+  <div class="container chapter">
+    <div class="chapter-label">Experience and education</div>
+    <div class="chapter-body">
+      <h2 class="display">Software used by real people</h2>
+
+      <div class="rows">
+        <article class="row">
+          <div>
+            <p class="row-date">2024–2026</p>
+            <p class="row-org">Lahore Garrison University</p>
+          </div>
+          <div>
+            <h3>ERP Developer Intern</h3>
+            <p>Worked on academic and administrative ERP systems using ASP.NET, C#, and SQL Server. Contributed to modules including student applications, Student Affairs, the Faculty Portal, and Minute Sheet workflows.</p>
+            <p>Worked on database queries, backend logic, UI improvements, and application workflows, gaining experience building software used in a real organisation.</p>
+            <div class="pills"><span class="pill">ASP.NET</span><span class="pill">C#</span><span class="pill">SQL Server</span></div>
+          </div>
+        </article>
+
+        <!-- EDIT: confirm the role title, dates and wording for the two entries below so they match your CV exactly. -->
+        <article class="row">
+          <div>
+            <p class="row-date">2026</p>
+            <p class="row-org">Zentallio</p>
+          </div>
+          <div>
+            <h3>Product Development Intern</h3>
+            <p>Supported ERP-related projects and documentation, gaining exposure to enterprise software workflows, requirements, and development processes.</p>
+          </div>
+        </article>
+
+        <article class="row">
+          <div>
+            <p class="row-date">2026</p>
+            <p class="row-org">Headstarter</p>
+          </div>
+          <div>
+            <h3>AI Fellowship</h3>
+            <p>Took part in an AI-focused software development programme involving practical projects, collaborative learning, and building AI-powered applications.</p>
+          </div>
+        </article>
+      </div>
+
+      <h3 class="subhead">Education</h3>
+      <div class="rows">
+        <article class="row">
+          <div>
+            <p class="row-date">2022–2026</p>
+            <p class="row-org">Lahore Garrison University</p>
+          </div>
+          <div>
+            <h3>Bachelor of Science in Computer Science</h3>
+            <p>CGPA 3.87 out of 4.00</p>
+            <div class="pills">
+              <span class="pill">Artificial Intelligence</span><span class="pill">Machine Learning</span><span class="pill">Deep Learning</span><span class="pill">Database Systems</span><span class="pill">Software Engineering</span><span class="pill">Web Development</span>
+            </div>
+            <!-- EDIT: use the exact official wording of the award. -->
+            <div class="award">
+              <span class="award-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"/><path d="M8.2 13.9 7 22l5-3 5 3-1.2-8.1"/></svg>
+              </span>
+              <div><strong>LGU High Achievers Award</strong><span>Recognition for academic performance</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ PROJECTS ============ -->
+<section class="section" id="projects">
+  <div class="container chapter">
+    <div class="chapter-label">What I have built</div>
+    <div class="chapter-body">
+      <h2 class="display">Projects that start with a real problem</h2>
+    </div>
+  </div>
+
+  <!-- FEATURED: ROZGAR HUB (full width so the product screens get room) -->
+  <div class="container">
+      <article class="feature" aria-labelledby="rozgar-title">
+        <span class="feature-tag">Featured project</span>
+        <div class="feature-head">
+          <h3 class="feature-title" id="rozgar-title">Rozgar Hub</h3>
+          <span class="urdu" lang="ur" dir="rtl">روزگار</span>
+        </div>
+        <p class="feature-sub">AI-Powered Employment Solutions</p>
+        <p class="feature-statement">Turning AI into practical opportunities.</p>
+
+        <div class="feature-grid">
+          <div>
+            <div class="story-block">
+              <h4>The problem</h4>
+              <p>Early in the morning, workers gather at local labour points hoping to find daily-wage work. Finding a job this way is informal, uncertain, and hard to trust for both workers and employers.</p>
+            </div>
+            <div class="story-block">
+              <h4>The solution</h4>
+              <p>Rozgar Hub is an AI-assisted employment platform for workers and employers in Pakistan. It combines AI-based job matching, natural language processing, location-based discovery, user profiles, job posting, communication, ratings, and payment verification. It works in English and Urdu, so workers can use it in their own language.</p>
+            </div>
+            <div class="story-block">
+              <h4>My role</h4>
+              <p>I worked on key parts of the system: Google authentication, CNIC-based profiles, NLP functionality, GPS and location features, and the integration of AI services.</p>
+            </div>
+          </div>
+
+          <figure>
+            <button class="shot" id="open-shot" aria-label="Open the full Rozgar Hub product walkthrough">
+              <img src="assets/rozgar-hub-flow.webp" width="1024" height="1536" alt="Rozgar Hub product walkthrough: English and Urdu homepages, worker onboarding with CNIC verification, skill selection and worker profile, OTP verification, employer job posting and candidate management, and the emergency SOS and admin portal.">
+              <span class="shot-hint">View full walkthrough</span>
+            </button>
+            <figcaption class="shot-caption">Product walkthrough: worker, employer, and admin flows.</figcaption>
+          </figure>
+        </div>
+
+        <dl class="results" aria-label="Rozgar Hub evaluation results">
+          <div class="result"><dt>System Usability Scale score</dt><dd><span class="count" data-target="84.2" data-decimals="1">84.2</span></dd></div>
+          <div class="result"><dt>AI match relevance</dt><dd><span class="count" data-target="83" data-suffix="%">83%</span></dd></div>
+          <div class="result"><dt>Payment trust</dt><dd><span class="count" data-target="87" data-suffix="%">87%</span></dd></div>
+        </dl>
+
+        <div class="flow">
+          <h4>Inside the product</h4>
+          <ol class="flow-list">
+            <li><strong>Get started</strong><span>English and Urdu homepages for localised access</span></li>
+            <li><strong>Onboarding and trust</strong><span>Urdu login, multi-step registration, CNIC upload, verified accounts</span></li>
+            <li><strong>Skills and activation</strong><span>Skill categories that lead to a complete worker profile</span></li>
+            <li><strong>Verified access</strong><span>OTP confirmation in English and Urdu, then a worker dashboard</span></li>
+            <li><strong>Employer flow</strong><span>Post a job, then manage applications and shortlisting</span></li>
+            <li><strong>Central services</strong><span>Emergency SOS for workers, and an admin portal for verification and reports</span></li>
+          </ol>
+        </div>
+
+        <div class="pills">
+          <span class="pill pill-accent">AI and NLP</span><span class="pill">OpenAI</span><span class="pill">Groq</span><span class="pill">Botpress</span><span class="pill">React</span><span class="pill">Node.js</span><span class="pill">MongoDB</span><span class="pill">APIs</span><span class="pill">Google Maps / Leaflet</span>
+        </div>
+      </article>
+  </div>
+
+  <!-- OTHER PROJECTS -->
+  <div class="container chapter">
+    <div></div>
+    <div class="chapter-body">
+      <h3 class="subhead">More projects</h3>
+      <div class="rows">
+        <article class="row">
+          <div><h3>Snaccify</h3><p class="row-org">AI-Powered Snack Recommendation Platform</p></div>
+          <div>
+            <p style="margin-top:0">A personalised snack recommendation platform built around each user's preferences and dietary choices. Snaccify explores how AI can make everyday decisions more personal instead of giving everyone the same recommendations.</p>
+            <div class="pills"><span class="pill pill-accent">AI</span><span class="pill">Personalisation</span><span class="pill">Recommendation systems</span><span class="pill">Web development</span></div>
+            <a class="row-link" href="https://snaccify.vercel.app/" target="_blank" rel="noopener">View Snaccify</a>
+          </div>
+        </article>
+
+        <article class="row">
+          <div><h3>AI Resume Analyzer</h3></div>
+          <div>
+            <p style="margin-top:0">An AI-based application that analyses resumes, identifies relevant skills and information, and helps evaluate candidates against defined criteria.</p>
+            <div class="pills"><span class="pill">Python</span><span class="pill">AI / ML</span><span class="pill">NLP</span><span class="pill">Data processing</span></div>
+            <!-- EDIT: add a GitHub link here, e.g. <a class="row-link" href="https://github.com/you/repo" target="_blank" rel="noopener">View on GitHub</a> -->
+          </div>
+        </article>
+
+        <article class="row">
+          <div><h3>AI Chatbot</h3></div>
+          <div>
+            <p style="margin-top:0">A conversational application that understands user questions and generates automated responses. This project helped me explore natural language processing and how to integrate AI capabilities into software.</p>
+            <div class="pills"><span class="pill">Python</span><span class="pill">NLP</span><span class="pill">AI integration</span></div>
+          </div>
+        </article>
+
+        <article class="row">
+          <div><h3>AI Rate My Professor</h3></div>
+          <div>
+            <p style="margin-top:0">An AI-assisted platform that explores how student feedback can be organised and turned into useful insights through an interactive web interface.</p>
+            <div class="pills"><span class="pill">Next.js</span><span class="pill">JavaScript</span><span class="pill">AI integration</span><span class="pill">UI / UX</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ RESEARCH ============ -->
+<section class="section" id="research">
+  <div class="container chapter">
+    <div class="chapter-label">What I have explored</div>
+    <div class="chapter-body">
+      <h2 class="display">Exploring AI beyond the classroom</h2>
+      <div class="prose">
+        <p class="lede">My academic work has let me explore Artificial Intelligence from both theoretical and practical sides.</p>
+        <p>I have worked on research projects involving Machine Learning and Deep Learning, and I have developed a growing interest in applying AI where technology can have a meaningful human impact.</p>
+      </div>
+
+      <h3 class="subhead">Research work</h3>
+      <!-- EDIT: only describe these as "published" if they are actually published. -->
+      <div class="papers">
+        <article class="paper">
+          <h3>Skin Cancer Detection</h3>
+          <p>Machine Learning and Deep Learning</p>
+        </article>
+        <article class="paper">
+          <h3>Machine Learning in the Early Detection of Mental Health Issues</h3>
+          <p>Machine Learning and AI</p>
+        </article>
+      </div>
+
+      <h3 class="subhead">Areas of interest</h3>
+      <div class="areas">
+        <div class="area"><h3>Machine Learning</h3><p>Predictive models and data-driven approaches to real-world problems.</p></div>
+        <div class="area"><h3>Deep Learning</h3><p>Neural-network-based approaches and their applications.</p></div>
+        <div class="area"><h3>Natural Language Processing</h3><p>How machines understand and process human language.</p></div>
+        <div class="area"><h3>AI for social impact</h3><p>How intelligent systems can improve access to opportunities and services.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills">
+  <div class="container chapter">
+    <div class="chapter-label">What I work with</div>
+    <div class="chapter-body">
+      <h2 class="display">Technical skills</h2>
+      <div class="skills">
+        <div class="skill-group"><h3>Artificial Intelligence</h3><div class="pills"><span class="pill">Machine Learning</span><span class="pill">Deep Learning</span><span class="pill">NLP</span><span class="pill">AI integration</span><span class="pill">LLMs</span></div></div>
+        <div class="skill-group"><h3>Programming</h3><div class="pills"><span class="pill">Python</span><span class="pill">C#</span><span class="pill">JavaScript</span><span class="pill">SQL</span></div></div>
+        <div class="skill-group"><h3>Software development</h3><div class="pills"><span class="pill">ASP.NET</span><span class="pill">React.js</span><span class="pill">Next.js</span><span class="pill">Node.js</span><span class="pill">Express.js</span></div></div>
+        <div class="skill-group"><h3>Databases</h3><div class="pills"><span class="pill">Microsoft SQL Server</span><span class="pill">MongoDB</span><span class="pill">Database design</span><span class="pill">SQL queries</span></div></div>
+        <div class="skill-group"><h3>Tools and platforms</h3><div class="pills"><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">APIs</span><span class="pill">Cloudinary</span><span class="pill">Google Authentication</span></div></div>
+        <div class="skill-group"><h3>Areas I am exploring</h3><div class="pills"><span class="pill pill-accent">Generative AI</span><span class="pill pill-accent">Large Language Models</span><span class="pill pill-accent">AI-powered applications</span><span class="pill pill-accent">Responsible AI</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISION ============ -->
+<section class="vision" id="vision">
+  <div class="container chapter">
+    <div class="chapter-label">Where I am going</div>
+    <div class="chapter-body">
+      <h2 class="vision-statement">I want to build AI that reaches beyond the screen.</h2>
+
+      <div class="vision-grid">
+        <div class="vision-copy">
+          <p>I want to build AI systems that are not only technically impressive, but genuinely useful.</p>
+          <p>My long-term goal is to work where Artificial Intelligence meets real-world problem solving, developing intelligent systems that improve access to employment, education, healthcare, and other essential opportunities.</p>
+          <p>Rozgar Hub showed me that even a final year project can start with a real problem and use technology to approach it differently. I want to take that idea further through advanced study, research, and collaboration.</p>
+          <p>An MSc in Artificial Intelligence is the next step in building the technical depth and research skills I need to turn these ideas into meaningful solutions.</p>
+        </div>
+
+        <div class="vision-map" role="img" aria-label="Four areas I want to work in. Employment has begun with Rozgar Hub. Education, Healthcare, and Opportunity are next.">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <line class="dashed" x1="50" y1="50" x2="15" y2="50"/>
+            <line class="dashed" x1="50" y1="50" x2="85" y2="50"/>
+            <line class="dashed" x1="50" y1="50" x2="50" y2="81"/>
+            <line class="dashed" x1="50" y1="19" x2="85" y2="50"/>
+            <line class="dashed" x1="50" y1="19" x2="15" y2="50"/>
+            <line class="dashed" x1="15" y1="50" x2="50" y2="81"/>
+            <line class="dashed" x1="85" y1="50" x2="50" y2="81"/>
+            <line class="built-line" x1="50" y1="50" x2="50" y2="19"/>
+          </svg>
+          <div class="vm-node vm-top vm-built vm-above"><span class="vm-dot"></span><span class="vm-label">Employment<small>Started with Rozgar Hub</small></span></div>
+          <div class="vm-node vm-left vm-below"><span class="vm-dot"></span><span class="vm-label">Education<small>Next</small></span></div>
+          <div class="vm-node vm-right vm-below"><span class="vm-dot"></span><span class="vm-label">Healthcare<small>Next</small></span></div>
+          <div class="vm-node vm-bottom vm-below"><span class="vm-dot"></span><span class="vm-label">Opportunity<small>Next</small></span></div>
+          <div class="vm-node vm-center"><span class="vm-dot"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="container chapter">
+    <div class="chapter-label">Contact</div>
+    <div class="chapter-body">
+      <h2 class="display">Let us connect</h2>
+      <div class="prose"><p class="lede">I am always interested in connecting with people working on Artificial Intelligence, software development, research, and technology for social impact.</p></div>
+
+      <div class="contact-list">
+        <a class="contact-item" data-contact="email" href="mailto:"><span>Email</span><span class="contact-value"></span></a>
+        <a class="contact-item" data-contact="linkedin" href="#" target="_blank" rel="noopener"><span>LinkedIn</span><span class="contact-value"></span></a>
+        <a class="contact-item" data-contact="github" href="#" target="_blank" rel="noopener"><span>GitHub</span><span class="contact-value"></span></a>
+      </div>
+      <p class="contact-note">Based in Lahore, Pakistan.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p><strong>Mahrukh Bashir</strong>, Software Engineer &amp; AI Enthusiast. Building technology with purpose.</p>
+    <p>&copy; 2026 Mahrukh Bashir</p>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<dialog class="lightbox" id="lightbox" aria-label="Rozgar Hub product walkthrough">
+  <div class="lb-inner">
+    <button class="lb-close" id="close-shot" aria-label="Close walkthrough">&times;</button>
+    <img src="assets/rozgar-hub-flow.webp" alt="Full Rozgar Hub product walkthrough covering worker onboarding, employer flow, and admin tools." loading="lazy">
+  </div>
+</dialog>
+
+<script>
+/* ============================================================
+   EDIT: your contact details. Leave a value as "" to hide that link.
+   ============================================================ */
+const PROFILE = {
+  email:    "your.email@example.com",
+  linkedin: "https://www.linkedin.com/in/your-profile",
+  github:   "https://github.com/your-username"
+};
+
+/* ---------- Contact links ---------- */
+document.querySelectorAll("[data-contact]").forEach(el => {
+  const key = el.dataset.contact, value = PROFILE[key];
+  if (!value) { el.remove(); return; }
+  el.href = key === "email" ? "mailto:" + value : value;
+  el.querySelector(".contact-value").textContent = value.replace(/^https?:\/\/(www\.)?/, "");
+});
+
+/* ---------- Mobile menu ---------- */
+const toggle = document.getElementById("nav-toggle");
+const links  = document.getElementById("nav-links");
+toggle.addEventListener("click", () => {
+  const open = links.classList.toggle("open");
+  toggle.setAttribute("aria-expanded", open);
+  toggle.textContent = open ? "Close" : "Menu";
+});
+links.addEventListener("click", e => {
+  if (e.target.matches("a")) { links.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); toggle.textContent = "Menu"; }
+});
+
+/* ---------- Scroll: header border, active link, timeline progress ---------- */
+const header   = document.getElementById("site-header");
+const navLinks = [...document.querySelectorAll(".nav-link")];
+const sections = navLinks.map(a => document.querySelector(a.getAttribute("href")));
+const tl       = document.getElementById("timeline");
+const tlItems  = [...tl.querySelectorAll(".tl-item")];
+let ticking = false;
+
+function onScroll() {
+  header.classList.toggle("is-scrolled", window.scrollY > 8);
+
+  let current = 0;
+  sections.forEach((s, i) => { if (s.getBoundingClientRect().top <= 140) current = i; });
+  navLinks.forEach((a, i) => { if (i === current) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current"); });
+
+  const r = tl.getBoundingClientRect();
+  const mid = window.innerHeight * 0.6;
+  const lastDot = tlItems[tlItems.length - 1].querySelector(".tl-dot").getBoundingClientRect();
+  const total = Math.max(0, lastDot.top + lastDot.height / 2 - r.top - 12);
+  tl.style.setProperty("--total", total + "px");
+  const fill = Math.max(0, Math.min(total, mid - r.top - 12));
+  tl.style.setProperty("--fill", fill + "px");
+  tlItems.forEach(item => {
+    const d = item.querySelector(".tl-dot").getBoundingClientRect();
+    item.classList.toggle("is-reached", d.top + d.height / 2 < mid);
+  });
+  ticking = false;
+}
+window.addEventListener("scroll", () => { if (!ticking) { requestAnimationFrame(onScroll); ticking = true; } }, { passive: true });
+window.addEventListener("resize", onScroll);
+onScroll();
+
+/* ---------- Count-up for Rozgar Hub results ---------- */
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const counters = [...document.querySelectorAll(".count")];
+function render(el, v) {
+  const d = +(el.dataset.decimals || 0);
+  el.textContent = v.toFixed(d) + (el.dataset.suffix || "");
+}
+if (!reduceMotion && "IntersectionObserver" in window) {
+  counters.forEach(el => render(el, 0));
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target, target = +el.dataset.target, start = performance.now(), dur = 1400;
+      (function step(now) {
+        const t = Math.min(1, (now - start) / dur);
+        render(el, target * (1 - Math.pow(1 - t, 3)));
+        if (t < 1) requestAnimationFrame(step);
+      })(start);
+      io.unobserve(el);
+    });
+  }, { threshold: 0.6 });
+  counters.forEach(el => io.observe(el));
+}
+
+/* ---------- Lightbox ---------- */
+const box = document.getElementById("lightbox");
+document.getElementById("open-shot").addEventListener("click", () => box.showModal());
+document.getElementById("close-shot").addEventListener("click", () => box.close());
+box.addEventListener("click", e => { if (e.target === box) box.close(); });
+</script>
+</body>
+</html>
